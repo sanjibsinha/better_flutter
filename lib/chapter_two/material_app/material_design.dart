@@ -10,14 +10,20 @@ class MaterialDesign extends StatelessWidget {
     return MaterialApp(
       title: 'Better Flutter - Essential Widgets',
       home: MDFirstPage(),
-      initialRoute: '/',
-      onGenerateRoute: (settings) {
-        MaterialPageRoute(
-          settings: settings,
-          builder: (BuildContext context) => MDSecondPage(),
-          fullscreenDialog: true,
-        );
-      },
+      initialRoute: '/second',
+      onGenerateRoute: _getSecondPageFirst,
+    );
+  }
+
+  Route<dynamic>? _getSecondPageFirst(RouteSettings settings) {
+    if (settings.name != '/second') {
+      return null;
+    }
+
+    return MaterialPageRoute<void>(
+      settings: settings,
+      builder: (BuildContext context) => MDSecondPage(),
+      fullscreenDialog: true,
     );
   }
 }
@@ -71,7 +77,9 @@ class MDSecondPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material Design Second Page'),
+        title: Text(
+          'Material Design Second Page',
+        ),
       ),
       body: MDSecondPageBody(),
     );
@@ -94,7 +102,26 @@ class MDSecondPageBody extends StatelessWidget {
             color: Colors.purple,
           )),
           child: Text(
-            'Material Design Second Page',
+            'We\'ve forced the user to come to the' +
+                ' Material Design Second Page,' +
+                ' Which can be a login page',
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.all(10),
+          padding: EdgeInsets.all(5),
+          decoration: BoxDecoration(
+              border: Border.all(
+            width: 5,
+            color: Colors.greenAccent,
+          )),
+          child: Text(
+            'Click the cross icon on the top left,' +
+                ' this will take us to the first page',
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
