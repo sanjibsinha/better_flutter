@@ -1,6 +1,15 @@
 # better_flutter
 
-A new Flutter project.
+A new Flutter project for the book Better Flutter.
+
+[Hope this book will help you to be a Better Flutter Developer. ](https://leanpub.com/betterflutter)
+
+To be a Better Flutter Developer?
+
+Or, not to be a Better Flutter Developer?
+
+Choice is yours!
+
 
 ## Getting Started
 
