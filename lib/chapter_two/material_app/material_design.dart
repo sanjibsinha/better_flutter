@@ -2,6 +2,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
+/// this is our main app that will return material design
+///
+
 class MaterialDesign extends StatelessWidget {
   const MaterialDesign({Key? key}) : super(key: key);
 
@@ -27,6 +30,10 @@ class MaterialDesign extends StatelessWidget {
     );
   }
 }
+
+/// this is first page that will not open as the initial router
+/// points to the second page
+///
 
 class MDFirstPage extends StatelessWidget {
   const MDFirstPage({Key? key}) : super(key: key);
@@ -69,6 +76,10 @@ class MDFirstPageBody extends StatelessWidget {
     );
   }
 }
+
+/// the second page will open first as the initial route
+/// points to this page
+///
 
 class MDSecondPage extends StatelessWidget {
   const MDSecondPage({Key? key}) : super(key: key);

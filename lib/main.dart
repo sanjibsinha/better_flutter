@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 import 'chapter_two/material_app/material_design.dart';
 
 void main() {
+  /// we'll keep changing the main app here
+  ///
   runApp(MaterialDesign());
 }
+
+/// this app is for show, it was built while we had created the
+/// flutter app
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
