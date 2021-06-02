@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'chapter_two/container_column_and_row/view/container_column_row.dart';
 
-import 'chapter_two/material_app/material_design.dart';
+// import 'chapter_two/material_app/material_design.dart';
 
 void main() {
   /// we'll keep changing the main app here
   ///
-  runApp(MaterialDesign());
+
+  // runApp(MaterialDesign());
+  runApp(ContainerColumnRow());
 }
 
 /// this app is for show, it was built while we had created the
