@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'container_row_column_modified.dart';
 
 class ContainerColumnRow extends StatelessWidget {
   const ContainerColumnRow({Key, key}) : super(key: key);
@@ -21,7 +22,8 @@ class CCRFirstPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Container, Column and Row first page'),
       ),
-      body: CCRFirstPageBody(),
+      // body: CCRFirstPageBody(),
+      body: ContainerRowColumnModified(),
     );
   }
 }
@@ -38,7 +40,7 @@ class CCRFirstPageBody extends StatelessWidget {
         color: Colors.purple,
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Card(
             child: Column(
