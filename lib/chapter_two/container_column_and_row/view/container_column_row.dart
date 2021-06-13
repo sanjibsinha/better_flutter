@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'container_row_column_modified.dart';
+import 'package:better_flutter/chapter_two/responsive_and_adaptive/media_query.dart';
 
 class ContainerColumnRow extends StatelessWidget {
   const ContainerColumnRow({Key, key}) : super(key: key);
@@ -8,7 +9,12 @@ class ContainerColumnRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Difference between container, column and row',
-      home: CCRFirstPage(),
+      // home: CCRFirstPage(),
+
+      /// in this example we will try to experiment
+      /// with device mode - portrait mode and landscape mode
+      ///
+      home: MediaQueryExample(),
     );
   }
 }
